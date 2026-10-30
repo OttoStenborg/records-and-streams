@@ -1,12 +1,12 @@
 package se.sprinto.hakan.model;
 
-public record Webcam(String title, double price) {
+public record Webcam(String title, int megapixels) {
 
     @Override
     public String toString() {
         return "Webcam{" +
                 "title='" + title + '\'' +
-                ", price=" + price +
+                ", price=" + megapixels +
                 '}';
     }
 }
