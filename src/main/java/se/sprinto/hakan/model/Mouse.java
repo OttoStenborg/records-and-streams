@@ -1,6 +1,6 @@
 package se.sprinto.hakan.model;
 
-public record Mouse(String title, int price) {
+public record Mouse(String title, double price) {
 
     @Override
     public String toString() {

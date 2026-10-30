@@ -1,6 +1,6 @@
 package se.sprinto.hakan.model;
 
-public record Headset(String title, int price) {
+public record Headset(String title, double price) {
 
     @Override
     public String toString() {
