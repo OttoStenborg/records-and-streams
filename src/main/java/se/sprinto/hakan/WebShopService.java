@@ -4,6 +4,8 @@ import se.sprinto.hakan.model.Computer;
 
 import java.util.List;
 
+import se.sprinto.hakan.model.Phone;
+
 public class WebShopService {
 
 
@@ -15,4 +17,11 @@ public class WebShopService {
         return computer;
     }
 
+    public Phone findFirstPhoneUnderPrice(
+            List<Phone> phones, double maxPrice) {
+        return phones.stream()
+                .filter(phone -> phone.price() < maxPrice)
+                .findFirst()
+                .orElseThrow();
+    }
 }
